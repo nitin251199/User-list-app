@@ -9,9 +9,10 @@ const SearchBar = React.memo(({ onChange }: SearchBarProps) => {
   return (
     <View style={styles.inputBox}>
       <TextInput
-        style={styles.input}
+        style={styles.input} 
         onChangeText={onChange}
         placeholder='Search Users by name'
+        placeholderTextColor={"#ccc"}
       />
     </View>
   );
@@ -33,5 +34,6 @@ const styles = StyleSheet.create({
   input: {
     flex: 1,
     fontSize: 16,
+    color: "#000"
   },
 });
